@@ -43,10 +43,7 @@
                     <div id="dash_products_body" class="collapsible-body">
                         <ul>
                             <li id="products_product">
-                                <a class="waves-effect" style="text-decoration: none;" href="#">List Product</a>
-                            </li>
-                            <li id="products_product">
-                                <a class="waves-effect" style="text-decoration: none;" href="addProduct.html">Add Product</a>
+                                <a class="waves-effect" style="text-decoration: none;" href="#">Add Product</a>
                             </li>
                         </ul>
                     </div>
@@ -57,10 +54,7 @@
                     <div id="dash_categories_body" class="collapsible-body">
                         <ul>
                             <li id="categories_category">
-                                <a class="waves-effect" style="text-decoration: none;" href="listCate.html">List Category</a>
-                            </li>
-                            <li id="categories_category">
-                                <a class="waves-effect" style="text-decoration: none;" href="addCate.html">Add Category</a>
+                                <a class="waves-effect" style="text-decoration: none;" href="#">Add Category</a>
                             </li>
 
                         </ul>
@@ -95,6 +89,8 @@
 
             <nav>
                 <div class="nav-wrapper indigo darken-2">
+                    <a style="margin-left: 20px;" class="breadcrumb" href="index.html">List</a>
+
                     <div style="margin-right: 20px;" id="timestamp" class="right"></div>
                 </div>
             </nav>
@@ -102,26 +98,40 @@
 
 <main>
     <div class="container">
-        <h4 class="name-page">List Product</h4>
-    <a class="btnEdit btn btn-primary btn-sm" href="addProduct.html" >Add Product</a>
-    <p></p>
-    <table id="tableProducts" class="table table-bordered">
-        <thead>
-            <tr>
-                <th style="width: 10%;">ID</th>
-                <th style="width: 30%;">Product Name</th>
-                <th style="width: 10%;">Category</th>
-                <th style="width: 10%;">Price</th>
-                <th style="width: 15%;">Image</th>
-                <th style="width: 25%;">Description</th>
-            </tr>
-        </thead>
-        <tbody>
+        <h4 class="name-page">Edit Product</h4>
+        <div class="modal-body">
+            <form class="addForm-product" enctype="multipart/form-data">
+                <div class="form-group">
+                    <h4 class="form-title">Name Product</h4>
+                    <input type="text" class="form-control" name="productName"
+                        placeholder="Please enter name product">
+                </div>
+                <div class="form-group">
+                    <h4 class="form-title">Product Description</h4>
+                    <input type="text" class="form-control" name="productDesc"
+                        placeholder="Please enter product description ">
+                </div>
+                <div class="form-group">
+                    <h4 class="form-title">Category</h4>
+                    <select class="form-control" name="cate" id="cbCate">
 
-        </tbody>
-    </table>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4 class="form-title">Price</h4>
+                    <input type="number" class="form-control" name="productPrice"
+                        placeholder="Please enter price product">
+                </div>
+                <div class="form-group">
+                    <h4 class="form-title">Product image</h4>
+                    <input type="file" class="form-control" name="productImg" id="img"
+                        placeholder="Please enter link image product">
+                </div><br> <br> <br>
+                <button type="submit" class="btn amber accent-4">Edit</button>
+            </form>
+        </div>
+    </div>
 
-</div>
         </main> 
 
        <footer class="indigo page-footer">

@@ -43,7 +43,7 @@
                     <div id="dash_products_body" class="collapsible-body">
                         <ul>
                             <li id="products_product">
-                                <a class="waves-effect" style="text-decoration: none;" href="#">List Product</a>
+                                <a class="waves-effect" style="text-decoration: none;" href="index.html">List Product</a>
                             </li>
                             <li id="products_product">
                                 <a class="waves-effect" style="text-decoration: none;" href="addProduct.html">Add Product</a>
@@ -57,8 +57,11 @@
                     <div id="dash_categories_body" class="collapsible-body">
                         <ul>
                             <li id="categories_category">
-                                <a class="waves-effect" style="text-decoration: none;" href="listCate.html">List Category</a>
+                                <a class="waves-effect" style="text-decoration: none;" href="#">List Category</a>
                             </li>
+
+                        </ul>
+                        <ul>
                             <li id="categories_category">
                                 <a class="waves-effect" style="text-decoration: none;" href="addCate.html">Add Category</a>
                             </li>
@@ -102,18 +105,15 @@
 
 <main>
     <div class="container">
-        <h4 class="name-page">List Product</h4>
-    <a class="btnEdit btn btn-primary btn-sm" href="addProduct.html" >Add Product</a>
+        <h4 class="name-page">List Category</h4>
+    <a class="btnEdit btn btn-primary btn-sm" href="addCate.html" >Add Category</a>
     <p></p>
     <table id="tableProducts" class="table table-bordered">
         <thead>
             <tr>
                 <th style="width: 10%;">ID</th>
-                <th style="width: 30%;">Product Name</th>
-                <th style="width: 10%;">Category</th>
-                <th style="width: 10%;">Price</th>
-                <th style="width: 15%;">Image</th>
-                <th style="width: 25%;">Description</th>
+                <th style="width: 50%;">Category Name</th>
+                <th style="width: 40%;">Short Decription</th>
             </tr>
         </thead>
         <tbody>
@@ -158,6 +158,29 @@
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
 <script src="./script.js"></script>
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCkh2erVG5hbVIBWjbDEg3nnIwG9mFNuOU",
+      authDomain: "javascriptpro-28b09.firebaseapp.com",
+      projectId: "javascriptpro-28b09",
+      storageBucket: "javascriptpro-28b09.appspot.com",
+      messagingSenderId: "947754825627",
+      appId: "1:947754825627:web:6cbd527c96dd1cef49933e",
+      measurementId: "G-5Z6V6WTCZY"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
 
 </body>
 
